@@ -2,8 +2,8 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div>
-            Not Found
+        <div className="NotFound">
+            not found
         </div>
     );
 };

@@ -10,15 +10,15 @@ import '../styles/global.scss';
 const App = () => {
 	return (
 		<BrowserRouter>
+		<Layout>
 			<Routes>
-				<Layout>
-					<Route exact path='/' component={Home}/>
-					<Route exact path='/login' component={Login}/>
-					<Route exact path='/recovery-password' component={RecoveryPassword}/>
-					<Route component={NotFound}/>
-				</Layout>
+				<Route exact path="/" element={<Home />} />
+				<Route exact path="/login" element={<Login />} />			
+				<Route exact path="/recovery-password" element={<RecoveryPassword />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
-		</BrowserRouter>
+		</Layout>
+	</BrowserRouter> 
 		 
 	);
 }
